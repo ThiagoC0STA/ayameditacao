@@ -108,6 +108,7 @@ Version: 1.0.0
 html,
 body {
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 body {
