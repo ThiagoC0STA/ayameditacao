@@ -9360,6 +9360,7 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   border-radius: 10px;
   overflow: hidden;
   z-index: 2;
+  height: 250px;
 }
 
 .tour-deal__img img {
@@ -9367,6 +9368,68 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   height: 100%;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+  object-fit: cover !important;
+}
+.highlight-section {
+  background-color: #e7ecee;
+  color: #000000cd;
+  text-align: center;
+  padding: 20px 20px;
+}
+.highlight-section .highlight-item {
+  font-size: 0.9em;
+  padding: 10px;
+}
+.highlight-section .highlight-item i {
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: #3e129c;
+}
+@media (min-width: 768px) {
+  .highlight-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .highlight-section .highlight-item {
+    flex: 1;
+    margin: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .highlight-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    text-align: start;
+  }
+  .highlight-section .highlight-item {
+    flex: 0 0 45%;
+    margin: 5px;
+  }
+  .highlight-section .highlight-item {
+    font-size: 0.9em;
+  }
+
+  .highlight-section .highlight-item:nth-child(2) {
+    text-align: end;
+  }
+
+  .highlight-section .highlight-item:nth-child(4) {
+    text-align: end;
+  }
+
+  .highlight-section i {
+    font-size: 1.2em !important;
+  }
+}
+.content-section {
+  padding: 20px;
+}
+.content-section img {
+  max-width: 100%;
+  height: auto;
 }
 
 .tour-deal__img:before {
