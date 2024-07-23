@@ -1658,7 +1658,7 @@ textarea.is-invalid {
   color: white !important;
   border-radius: 50px;
   padding: 12px;
-  font-size: 24px;
+  font-size: 25px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   text-decoration: none;
@@ -1679,7 +1679,7 @@ textarea.is-invalid {
   color: white !important;
   border-radius: 50px;
   padding: 12px;
-  font-size: 24px;
+  font-size: 25px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   text-decoration: none;
@@ -2064,6 +2064,13 @@ textarea.is-invalid {
   margin-bottom: calc(var(--section-title-space) - 12px);
   position: relative;
   z-index: 2;
+  
+}
+
+@media (max-width: 768px) {
+  .title-area {
+    margin-top: -30px !important;
+  }
 }
 
 .title-area .sec-title {
@@ -9393,41 +9400,68 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   object-fit: cover !important;
 }
 .highlight-section {
-  background-color: #eff4f6;
-  color: #878787;
+  background: #eeeff0d5;
+  color: #555;
   text-align: center;
-  padding: 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  margin: 10px 20px;
+  margin-bottom: -30px !important;
+  display: flex;
+  justify-content: space-between;
 }
+
+.highlight-section  i {
+  font-size: 1.2em !important; 
+
+}
+
+section {
+  margin: 50px 0;
+}
+
 .highlight-section .highlight-item {
   font-size: 0.9em;
-  padding: 10px;
+  text-wrap: nowrap;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+  flex: 1 1 calc(50% - 20px); /* Dois itens por linha no mobile */
+  box-sizing: border-box;
 }
+
+.highlight-section .highlight-item:hover {
+  background: #ddd;
+  transform: translateY(-5px);
+}
+
 .highlight-section .highlight-item i {
   margin-right: 10px;
-  font-size: 1.5em;
-  color: #3e129c;
+  font-size: 1.8em;
+  color: #4a4a4a;
+}
+
+.highlight-section .highlight-item span {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .highlight-section .highlight-item {
+    flex: 1 1 100%; /* Um item por linha no desktop */
+  }
 }
 
 @media (max-width: 767px) {
   .highlight-section {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 4px 25px;
-    text-align: start;
-  }
-  .highlight-section .highlight-item {
-    flex: 0 0 45%;
-    margin: 2px;
-  }
-  .highlight-section .highlight-item {
-    font-size: 0.9em;
-  }
-
-  .highlight-section i {
-    font-size: 1.1em !important;
   }
 }
+
 .content-section {
   padding: 20px;
 }
