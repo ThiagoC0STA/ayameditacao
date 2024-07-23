@@ -1095,8 +1095,8 @@ textarea.is-invalid {
   width: 85%;
 }
 
-.ot-menu-wrapper .mobile-logo svg {
-  max-width: 185px;
+.ot-menu-wrapper .mobile-logo img {
+  max-width: 160px;
 }
 
 .ot-menu-wrapper .ot-menu-toggle {
@@ -1652,12 +1652,12 @@ textarea.is-invalid {
 
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  left: 10px;
   background-color: #25d366;
   color: white !important;
   border-radius: 50px;
-  padding: 15px;
+  padding: 12px;
   font-size: 24px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000;
@@ -1668,6 +1668,27 @@ textarea.is-invalid {
 }
 
 .whatsapp-button i {
+  margin: 0;
+}
+
+.insta-button {
+  position: fixed;
+  bottom: 65px;
+  left: 10px;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white !important;
+  border-radius: 50px;
+  padding: 12px;
+  font-size: 24px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insta-button i {
   margin: 0;
 }
 
@@ -9386,35 +9407,25 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   font-size: 1.5em;
   color: #3e129c;
 }
-@media (min-width: 768px) {
-  .highlight-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .highlight-section .highlight-item {
-    flex: 1;
-    margin: 0 20px;
-  }
-}
+
 @media (max-width: 767px) {
   .highlight-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 8px 25px;
+    padding: 4px 25px;
     text-align: start;
   }
   .highlight-section .highlight-item {
     flex: 0 0 45%;
-    margin: 5px;
+    margin: 2px;
   }
   .highlight-section .highlight-item {
-    font-size: 0.92em;
+    font-size: 0.9em;
   }
 
   .highlight-section i {
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
   }
 }
 .content-section {
